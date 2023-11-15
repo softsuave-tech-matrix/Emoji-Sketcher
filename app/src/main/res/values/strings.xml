@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">DrawEmoji GetEmoji</string>
+    <string name="you_are_drawing">Your drawing looks like:</string>
 </resources>

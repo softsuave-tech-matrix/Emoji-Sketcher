@@ -2,6 +2,7 @@ package softsuave.tech_matrix.draw_emoji_get_emoji.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import softsuave.tech_matrix.draw_emoji_get_emoji.MyApplication
 import softsuave.tech_matrix.draw_emoji_get_emoji.databinding.MainActivityBinding
 
 class MainActivity : AppCompatActivity() {
@@ -11,5 +12,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         _binding = MainActivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        MyApplication.getComponent(this)
+            .plusDrawEmojiComponent()
+            .inject(this)
     }
 }
