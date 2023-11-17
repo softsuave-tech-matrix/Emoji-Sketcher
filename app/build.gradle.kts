@@ -66,27 +66,27 @@ dependencies {
     implementation ("androidx.constraintlayout:constraintlayout:2.1.4")
 
     // dagger
-    implementation ("com.google.dagger:dagger:2.15")
-    annotationProcessor ("com.google.dagger:dagger-compiler:2.15")
-    kapt ("com.google.dagger:dagger-compiler:2.15")
-    androidTestImplementation ("com.google.dagger:dagger:2.15")
-    androidTestAnnotationProcessor ("com.google.dagger:dagger-compiler:2.15")
-    kaptAndroidTest ("com.google.dagger:dagger-compiler:2.15")
+    implementation ("com.google.dagger:dagger:2.28.3")
+    annotationProcessor ("com.google.dagger:dagger-compiler:2.24")
+    kapt ("com.google.dagger:dagger-compiler:2.24")
+    androidTestImplementation ("com.google.dagger:dagger:2.28.3")
+    androidTestAnnotationProcessor ("com.google.dagger:dagger-compiler:2.24")
+    kaptAndroidTest ("com.google.dagger:dagger-compiler:2.24")
 
-    testImplementation ("junit:junit:4.12")
+    testImplementation ("junit:junit:4.13.2")
 
-    androidTestImplementation ("com.android.support.test:runner:1.0.1")
-    androidTestImplementation ("com.android.support.test.espresso:espresso-core:3.0.1")
+    androidTestImplementation ("com.android.support.test:runner:1.0.2")
+    androidTestImplementation ("com.android.support.test.espresso:espresso-core:3.0.2")
 
     androidTestImplementation ("com.squareup.assertj:assertj-android:1.2.0")
     androidTestImplementation  ("org.assertj:assertj-core:3.6.2")
 
-    testImplementation ("org.mockito:mockito-core:2.8.9")
+    testImplementation ("org.mockito:mockito-core:2.19.0")
     testImplementation ("com.nhaarman.mockitokotlin2:mockito-kotlin:2.0.0-RC1")
 
     implementation ("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.9.0")
 
-    implementation ("com.jakewharton.timber:timber:4.7.0")
+    implementation ("com.jakewharton.timber:timber:4.7.1")
 
     //RxJava
     implementation("io.reactivex.rxjava2:rxjava:2.2.10")
@@ -105,6 +105,5 @@ dependencies {
     implementation ("com.squareup.retrofit2:adapter-rxjava2:2.6.0")
     implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
     implementation ("com.squareup.okhttp3:logging-interceptor:4.9.3")
-
 
 }
