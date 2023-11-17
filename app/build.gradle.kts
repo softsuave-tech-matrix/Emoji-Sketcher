@@ -65,12 +65,6 @@ dependencies {
     implementation ("androidx.recyclerview:recyclerview:1.3.2")
     implementation ("androidx.constraintlayout:constraintlayout:2.1.4")
 
-    //dagger
-/*    implementation ("com.google.dagger:dagger-android:2.45")
-    implementation ("com.google.dagger:dagger-android-support:2.45")
-    annotationProcessor ("com.google.dagger:dagger-android-processor:2.45")
-    annotationProcessor ("com.google.dagger:dagger-compiler:2.45")*/
-
     // dagger
     implementation ("com.google.dagger:dagger:2.15")
     annotationProcessor ("com.google.dagger:dagger-compiler:2.15")

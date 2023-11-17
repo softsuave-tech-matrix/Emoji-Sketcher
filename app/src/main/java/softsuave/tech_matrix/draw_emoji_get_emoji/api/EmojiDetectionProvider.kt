@@ -30,17 +30,6 @@ class EmojiDetectionProvider
             .map(::extractEmojiArrayFromResponse)
     }
 
-    fun getEmojis(strokes: Array<Array<IntArray>>): Single<List<String>> {
-        val req = EmojiDetectionRequest.Builder()
-            .width(width)
-            .height(height)
-            .setStrokes(strokes)
-            .build()
-
-        return service.detect(req)
-            .map(::extractEmojiArrayFromResponse)
-    }
-
     private fun convertStrokesToArray(strokes: List<Stroke>): Array<Array<IntArray>> {
         return strokes.map { stroke ->
             arrayOf(
@@ -51,14 +40,6 @@ class EmojiDetectionProvider
         }.toTypedArray()
     }
 
-
-    /**
-     * The response that the API returns is not a nice JSON object with named attributes, so we can't
-     * really use gson to parse it, we need to parse it manually
-     * ["SUCCESS",[["b414e3d9cb625ee2",["👄","🛁","🛀","🚢","🍪","📗","🍋","📙","✏️","👊"],[],{"is_html_escaped":false}]]]
-     * @param responseBody
-     * @return
-     */
     private fun extractEmojiArrayFromResponse(responseBody: ResponseBody): List<String> {
         val string = responseBody.string()
         val arrayString = "{\"data\": $string }"

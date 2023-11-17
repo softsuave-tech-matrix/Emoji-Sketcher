@@ -14,9 +14,7 @@ abstract class BasePresenter<V : MVP.View> : MVP.Presenter<V> {
         initialize()
     }
 
-    protected open fun initialize() {
-        // no-op
-    }
+    protected open fun initialize() {}
 
     override fun unbindView() {
         view = null

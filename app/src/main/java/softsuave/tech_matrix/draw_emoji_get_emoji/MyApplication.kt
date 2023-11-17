@@ -6,9 +6,7 @@ import softsuave.tech_matrix.draw_emoji_get_emoji.di.ApplicationComponent
 import softsuave.tech_matrix.draw_emoji_get_emoji.di.ApplicationModule
 import softsuave.tech_matrix.draw_emoji_get_emoji.di.DaggerApplicationComponent
 
-
-open class MyApplication: Application() {
-
+open class MyApplication : Application() {
 
     private lateinit var component: ApplicationComponent
 

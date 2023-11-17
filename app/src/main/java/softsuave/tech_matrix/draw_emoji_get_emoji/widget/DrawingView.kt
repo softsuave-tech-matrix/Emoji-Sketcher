@@ -1,6 +1,5 @@
 package softsuave.tech_matrix.draw_emoji_get_emoji.widget
 
-
 import android.annotation.SuppressLint
 import android.content.Context
 import android.graphics.Bitmap
@@ -18,7 +17,6 @@ import io.reactivex.subjects.PublishSubject
 import softsuave.tech_matrix.draw_emoji_get_emoji.R
 import softsuave.tech_matrix.draw_emoji_get_emoji.model.Stroke
 
-
 class DrawingView @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0, defStyleRes: Int = 0
 ) : View(context, attrs, defStyleAttr, defStyleRes) {
@@ -26,16 +24,19 @@ class DrawingView @JvmOverloads constructor(
     private val paint: Paint
     private var currentPath: Path = Path()
     private val paths: MutableList<Path> = mutableListOf()
+    private var redoPath: MutableList<Path> = mutableListOf()
     private lateinit var drawingCanvas: Canvas
     private lateinit var drawingBitmap: Bitmap
 
     private val strokes: MutableList<Stroke> = mutableListOf()
+    private var redoStroke: MutableList<Stroke> = mutableListOf()
     private var currentStroke: Stroke = Stroke()
 
     private val pubsub = PublishSubject.create<List<Stroke>>()
 
     @ColorInt
     private val bgColor: Int
+
     @ColorInt
     private val paintColor: Int
 
@@ -46,13 +47,17 @@ class DrawingView @JvmOverloads constructor(
         val typedArray = context.obtainStyledAttributes(
             attrs,
             R.styleable.DrawingView,
-            0, 0)
+            0, 0
+        )
 
         bgColor = typedArray.getColor(
             R.styleable.DrawingView_dv_backgroundColor,
-            ContextCompat.getColor(context, android.R.color.white))
-        paintColor = typedArray.getColor(R.styleable.DrawingView_dv_paintColor,
-            ContextCompat.getColor(context, android.R.color.black))
+            ContextCompat.getColor(context, android.R.color.white)
+        )
+        paintColor = typedArray.getColor(
+            R.styleable.DrawingView_dv_paintColor,
+            ContextCompat.getColor(context, android.R.color.black)
+        )
         strokeWidth = typedArray.getFloat(R.styleable.DrawingView_dv_strokeWidth, 10f)
 
         typedArray.recycle()
@@ -94,7 +99,6 @@ class DrawingView @JvmOverloads constructor(
 
         when (event.action) {
             MotionEvent.ACTION_DOWN -> {
-                // Little hack to make sure "points" can be drawn
                 currentPath.moveTo(event.x - 1, event.y - 1)
                 currentPath.lineTo(event.x + 1, event.y + 1)
                 currentStroke.addPoint(event.x.toInt(), event.y.toInt())
@@ -111,7 +115,7 @@ class DrawingView @JvmOverloads constructor(
                 strokes.add(currentStroke)
                 currentPath = Path()
                 currentStroke = Stroke()
-                invalidate() // need this here as well for "points" that are up and down events (without passing from move)
+                invalidate()
                 onStrokeAdded()
             }
         }
@@ -123,25 +127,37 @@ class DrawingView @JvmOverloads constructor(
         pubsub.onNext(strokes)
     }
 
-    /**
-     * Clear the view completely
-     */
     fun clear() {
         paths.clear()
         strokes.clear()
+        redoPath.clear()
+        redoStroke.clear()
         pubsub.onNext(strokes)
         clearDrawingCanvas()
         invalidate()
     }
 
-    /**
-     * Undo the last stroke that was drawn.
-     */
     fun undo() {
         if (paths.isNotEmpty()) {
             clearDrawingCanvas()
-            paths.removeAt(paths.size - 1)
-            strokes.removeAt(strokes.size - 1)
+            val redoPathItem = paths.removeAt(paths.size - 1)
+            val redoStrokeItem = strokes.removeAt(strokes.size - 1)
+            redoPath.add(redoPathItem)
+            redoStroke.add(redoStrokeItem)
+            pubsub.onNext(strokes)
+            invalidate()
+        }
+    }
+
+    fun redo() {
+        if (redoPath.isNotEmpty()) {
+            val redoStrokeItem = redoStroke.last()
+            val redoPathItem = redoPath.last()
+            redoStroke.removeLast()
+            redoPath.removeLast()
+            strokes.add(redoStrokeItem)
+            paths.add(redoPathItem)
+
             pubsub.onNext(strokes)
             invalidate()
         }

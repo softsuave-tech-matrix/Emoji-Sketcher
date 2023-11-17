@@ -54,13 +54,9 @@ class EmojiDetectionRequest(val options: String, val requests: List<Request>) {
                 language = LANGUAGE,
                 ink = strokes
             )
-
             return EmojiDetectionRequest(options = OPTIONS, requests = listOf(request))
-
         }
-
     }
-
 }
 
 
