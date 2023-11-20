@@ -10,7 +10,7 @@ import app.we.go.emojidraw.features.practice.OnItemClickListener
 import io.reactivex.disposables.CompositeDisposable
 import softsuave.tech_matrix.draw_emoji_get_emoji.MyApplication
 import softsuave.tech_matrix.draw_emoji_get_emoji.R
-import softsuave.tech_matrix.draw_emoji_get_emoji.databinding.MainActivityBinding
+import softsuave.tech_matrix.draw_emoji_get_emoji.databinding.DrawEmojiActivityBinding
 import softsuave.tech_matrix.draw_emoji_get_emoji.util.CenteredToast
 import timber.log.Timber
 import javax.inject.Inject
@@ -19,14 +19,14 @@ class DrawEmojiActivity : AppCompatActivity(), EmojiDrawContract.View, OnItemCli
 
     @Inject
     lateinit var presenter: EmojiDrawContract.Presenter
-    private var _binding: MainActivityBinding? = null
+    private var _binding: DrawEmojiActivityBinding? = null
     private val binding by lazy { _binding!! }
     private val disposables = CompositeDisposable()
 
     private lateinit var adapter: EmojiDetectedAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        _binding = MainActivityBinding.inflate(layoutInflater)
+        _binding = DrawEmojiActivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         MyApplication.getComponent(this)

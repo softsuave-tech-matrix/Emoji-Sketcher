@@ -2,4 +2,5 @@
     <string name="app_name">DrawEmoji GetEmoji</string>
     <string name="you_are_drawing">Your drawing looks like:</string>
     <string name="network_error">😞 Check your\ninternet connection 📶</string>
+    <string name="image">image</string>
 </resources>

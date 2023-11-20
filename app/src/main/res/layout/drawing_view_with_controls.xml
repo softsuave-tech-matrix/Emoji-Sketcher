@@ -22,36 +22,41 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    <Button
+    <ImageView
         android:id="@+id/undoButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Undo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="@string/image"
+        android:padding="5dp"
+        android:src="@drawable/undo_arrow_icon"
         app:layout_constraintBottom_toBottomOf="@+id/clearButton"
         app:layout_constraintEnd_toStartOf="@+id/clearButton"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/clearButton" />
 
-    <Button
+    <ImageView
         android:id="@+id/clearButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        android:text="Clear"
+        android:contentDescription="@string/image"
+        android:padding="5dp"
+        android:src="@drawable/clear_icon"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/undoButton"
         app:layout_constraintStart_toEndOf="@+id/redoButton"
         app:layout_constraintTop_toBottomOf="@+id/drawingArea" />
 
-    <Button
+    <ImageView
         android:id="@+id/redoButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        android:text="Redo"
+        android:padding="5dp"
+        android:src="@drawable/redo_arrow_icon"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/clearButton"

@@ -19,10 +19,7 @@ class DrawingViewWithControls @JvmOverloads constructor(
     init {
         binding = DrawingViewWithControlsBinding.inflate(LayoutInflater.from(context), this, true)
 
-        binding?.undoButton?.setOnClickListener {
-            binding?.drawingArea?.undo()
-        }
-
+        binding?.undoButton?.setOnClickListener { binding?.drawingArea?.undo() }
         binding?.clearButton?.setOnClickListener { binding?.drawingArea?.clear() }
         binding?.redoButton?.setOnClickListener { binding?.drawingArea?.redo() }
 

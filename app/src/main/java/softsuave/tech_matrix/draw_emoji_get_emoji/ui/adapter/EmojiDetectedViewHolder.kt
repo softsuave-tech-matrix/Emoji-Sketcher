@@ -10,21 +10,19 @@ class EmojiDetectedViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView
     View.OnClickListener {
 
     private val emojiView: TextView = itemView as TextView
-    private val pulseAnimation: ObjectAnimator
+    private val pulseAnimation: ObjectAnimator = ObjectAnimator.ofPropertyValuesHolder(
+        emojiView,
+        PropertyValuesHolder.ofFloat("scaleX", 1.2f),
+        PropertyValuesHolder.ofFloat("scaleY", 1.2f)
+    )
     private var itemClickListener: OnItemClickListener? = null
 
     init {
-        pulseAnimation = ObjectAnimator.ofPropertyValuesHolder(
-            emojiView,
-            PropertyValuesHolder.ofFloat("scaleX", 1.2f),
-            PropertyValuesHolder.ofFloat("scaleY", 1.2f)
-        )
         pulseAnimation.duration = 310
 
         pulseAnimation.repeatCount = ObjectAnimator.INFINITE
         pulseAnimation.repeatMode = ObjectAnimator.REVERSE
     }
-
 
     fun bind(emoji: String, isTheOne: Boolean) {
         emojiView.text = emoji
@@ -39,5 +37,4 @@ class EmojiDetectedViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView
     override fun onClick(p0: View?) {
         itemClickListener?.onItemClick(emojiView.text.toString())
     }
-
 }
