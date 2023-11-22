@@ -1,5 +1,6 @@
 package softsuave.tech_matrix.draw_emoji_get_emoji.ui
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
@@ -22,6 +23,7 @@ class DrawEmojiActivity : AppCompatActivity(), EmojiDrawContract.View, OnItemCli
     private var _binding: DrawEmojiActivityBinding? = null
     private val binding by lazy { _binding!! }
     private val disposables = CompositeDisposable()
+    private val REQUEST_EMOJI_ICON_CODE = 1234
 
     private lateinit var adapter: EmojiDetectedAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -80,6 +82,10 @@ class DrawEmojiActivity : AppCompatActivity(), EmojiDrawContract.View, OnItemCli
 
     override fun onItemClick(emoji: String) {
         Timber.d("Emoji String ====> %s", emoji)
+        val returnIntent = Intent()
+        returnIntent.putExtra("selectedEmoji", emoji)
+        setResult(REQUEST_EMOJI_ICON_CODE, returnIntent)
+        //finish()
     }
 
     override fun onDestroy() {

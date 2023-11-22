@@ -9,13 +9,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e55ebdd-dcd3-4a12-a3e0-6901be8be837" name="Changes" comment="build gradle version updated">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/clear_icon.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/redo_arrow_icon.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/undo_arrow_icon.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.0/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.0/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.0/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/checksums/sha1-checksums.bin" afterDir="false" />
+    <list default="true" id="2e55ebdd-dcd3-4a12-a3e0-6901be8be837" name="Changes" comment="worked on UI changes and gradle updates">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/ui/example/GetEmojiActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/ui/example/GetEmojiFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/get_emoji_activity.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.bin" afterDir="false" />
@@ -25,14 +22,9 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/ui/DrawEmojiActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/ui/DrawEmojiActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/ui/adapter/EmojiDetectedAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/ui/adapter/EmojiDetectedAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/ui/adapter/EmojiDetectedViewHolder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/ui/adapter/EmojiDetectedViewHolder.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/widget/DrawingViewWithControls.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/widget/DrawingViewWithControls.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/drawing_view_with_controls.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/drawing_view_with_controls.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/main_activity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/draw_emoji_activity.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/draw_emoji_activity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/draw_emoji_activity.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,8 +78,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Class" />
         <option value="Kotlin Interface" />
+        <option value="layoutResourceFile" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -113,9 +106,13 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;DEBUGGABLE_DEVICE&quot;: &quot;oneplus-ac2001-79a1cac5&quot;,
+    &quot;DEBUGGABLE_PROCESS&quot;: &quot;softsuave.tech_matrix.draw_emoji_get_emoji&quot;,
+    &quot;DEBUGGER_ID&quot;: &quot;Auto&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;SHOW_ALL_PROCESSES&quot;: &quot;false&quot;,
     &quot;android-custom-view/Users/kasiguruprasad/Documents/Muthu Selvam/Android ProjectFolder/Draw Emoji Get Emoji/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/widget/DrawingView.kt_SELECTED&quot;: &quot;DrawingView&quot;,
     &quot;android-custom-view/Users/kasiguruprasad/Documents/Muthu Selvam/Android ProjectFolder/Draw Emoji Get Emoji/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/widget/DrawingViewWithControls.kt_SELECTED&quot;: &quot;DrawingViewWithControls&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
@@ -137,6 +134,9 @@
       <recent name="$PROJECT_DIR$/app/src/main/res/font" />
       <recent name="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji" />
       <recent name="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/di" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="softsuave.tech_matrix.draw_emoji_get_emoji.ui.example" />
     </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
       <recent name="softsuave.tech_matrix.draw_emoji_get_emoji.util" />
@@ -244,13 +244,52 @@
       <option name="project" value="LOCAL" />
       <updated>1700203877533</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="worked on UI changes and gradle updates">
+      <created>1700460867670</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1700460867670</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="base commit" />
     <MESSAGE value="worked on emoji draw UI and functionality" />
     <MESSAGE value="build gradle version updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="build gradle version updated" />
+    <MESSAGE value="worked on UI changes and gradle updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="worked on UI changes and gradle updates" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/ui/DrawEmojiActivity.kt</url>
+          <line>84</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/ui/DrawEmojiActivity.kt</url>
+          <line>86</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/ui/DrawEmojiActivity.kt</url>
+          <line>52</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/ui/DrawEmojiActivity.kt</url>
+          <line>56</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/ui/DrawEmojiActivity.kt</url>
+          <line>62</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
