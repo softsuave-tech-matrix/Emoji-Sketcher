@@ -85,7 +85,7 @@ class DrawEmojiActivity : AppCompatActivity(), EmojiDrawContract.View, OnItemCli
         val returnIntent = Intent()
         returnIntent.putExtra("selectedEmoji", emoji)
         setResult(REQUEST_EMOJI_ICON_CODE, returnIntent)
-        //finish()
+        finish()
     }
 
     override fun onDestroy() {
