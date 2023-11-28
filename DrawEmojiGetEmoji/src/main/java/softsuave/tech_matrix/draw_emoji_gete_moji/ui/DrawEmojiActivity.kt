@@ -1,19 +1,21 @@
-package softsuave.tech_matrix.draw_emoji_get_emoji.ui
+package softsuave.tech_matrix.draw_emoji_gete_moji.ui
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import softsuave.tech_matrix.draw_emoji_get_emoji.ui.adapter.OnItemClickListener
 import io.reactivex.disposables.CompositeDisposable
+import softsuave.tech_matrix.draw_emoji_get_emoji.ui.adapter.EmojiDetectedAdapter
 import softsuave.tech_matrix.draw_emoji_get_emoji.MyApplication
 import softsuave.tech_matrix.draw_emoji_get_emoji.databinding.DrawEmojiActivityBinding
-import softsuave.tech_matrix.draw_emoji_get_emoji.ui.adapter.EmojiDetectedAdapter
+import softsuave.tech_matrix.draw_emoji_get_emoji.ui.EmojiDrawContract
+import softsuave.tech_matrix.draw_emoji_get_emoji.ui.adapter.OnItemClickListener
 import timber.log.Timber
 import javax.inject.Inject
 
-class DrawEmojiActivity : AppCompatActivity(), EmojiDrawContract.View, OnItemClickListener {
+class DrawEmojiActivity : AppCompatActivity(), EmojiDrawContract.View,
+    OnItemClickListener {
 
     @Inject
     lateinit var presenter: EmojiDrawContract.Presenter
@@ -89,4 +91,5 @@ class DrawEmojiActivity : AppCompatActivity(), EmojiDrawContract.View, OnItemCli
         super.onDestroy()
         disposables.clear()
     }
+
 }

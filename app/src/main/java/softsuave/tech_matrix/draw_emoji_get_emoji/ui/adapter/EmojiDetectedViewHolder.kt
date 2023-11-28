@@ -1,10 +1,11 @@
-package app.we.go.emojidraw.features.practice
+package softsuave.tech_matrix.draw_emoji_get_emoji.ui.adapter
 
 import android.animation.ObjectAnimator
 import android.animation.PropertyValuesHolder
 import android.view.View
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import softsuave.tech_matrix.draw_emoji_get_emoji.ui.adapter.OnItemClickListener
 
 class EmojiDetectedViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView),
     View.OnClickListener {

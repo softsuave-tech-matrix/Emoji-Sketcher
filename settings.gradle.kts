@@ -15,4 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "DrawEmoji GetEmoji"
 include(":app")
- 
+include(":DrawEmojiGetEmoji")

@@ -44,7 +44,6 @@ constructor(
                 .subscribe({ processEmojiGuesses(it) },
                     { onError(it) })
         )
-
     }
 
     private fun processEmojiGuesses(emojis: List<String>) {
@@ -62,8 +61,12 @@ constructor(
     }
 
     private fun onError(throwable: Throwable) {
-        Timber.e(throwable)
-        view?.showErrorMessage()
+        try {
+            Timber.e(throwable)
+            view?.showErrorMessage()
+        } catch (e: Exception) {
+            println(e)
+        }
     }
 
     open fun handleNextEmoji(): Boolean {

@@ -9,5 +9,5 @@ import softsuave.tech_matrix.draw_emoji_get_emoji.ui.DrawEmojiActivity
 @Subcomponent(modules = [(EmojiDrawMvpModule::class), (DrawEmojiConfigurationModule::class)])
 interface DrawEmojiComponent {
 
-    fun inject(mainActivity: DrawEmojiActivity)
+    fun inject(drawEmojiActivity: DrawEmojiActivity)
 }

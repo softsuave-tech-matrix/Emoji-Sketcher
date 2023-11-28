@@ -1,4 +1,4 @@
-package app.we.go.emojidraw.features.practice
+package softsuave.tech_matrix.draw_emoji_get_emoji.ui.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -6,7 +6,6 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import softsuave.tech_matrix.draw_emoji_get_emoji.R
-import softsuave.tech_matrix.draw_emoji_get_emoji.ui.adapter.EmojiDiffCallback
 
 class EmojiDetectedAdapter(val context: Context) : RecyclerView.Adapter<EmojiDetectedViewHolder>() {
 
