@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:paddingBottom="2dp">
 
-    <softsuave.tech_matrix.draw_emoji_get_emoji.widget.DrawingView
+    <softsuave.tech_matrix.emoji_sketcher.widget.DrawingView
         android:id="@+id/drawingArea"
         android:layout_width="280dp"
         android:layout_height="280dp"

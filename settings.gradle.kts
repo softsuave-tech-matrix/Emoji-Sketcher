@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "DrawEmoji GetEmoji"
+rootProject.name = "Emoji Sketcher"
 include(":app")
-include(":DrawEmojiGetEmoji")
+include(":Emoji Sketcher")

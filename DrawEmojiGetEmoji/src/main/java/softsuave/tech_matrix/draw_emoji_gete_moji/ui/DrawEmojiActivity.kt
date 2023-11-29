@@ -6,11 +6,11 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import io.reactivex.disposables.CompositeDisposable
-import softsuave.tech_matrix.draw_emoji_get_emoji.ui.adapter.EmojiDetectedAdapter
-import softsuave.tech_matrix.draw_emoji_get_emoji.MyApplication
-import softsuave.tech_matrix.draw_emoji_get_emoji.databinding.DrawEmojiActivityBinding
-import softsuave.tech_matrix.draw_emoji_get_emoji.ui.EmojiDrawContract
-import softsuave.tech_matrix.draw_emoji_get_emoji.ui.adapter.OnItemClickListener
+import softsuave.tech_matrix.emoji_sketcher.ui.adapter.EmojiDetectedAdapter
+import softsuave.tech_matrix.emoji_sketcher.MyApplication
+import softsuave.tech_matrix.emoji_sketcher.databinding.DrawEmojiActivityBinding
+import softsuave.tech_matrix.emoji_sketcher.ui.EmojiDrawContract
+import softsuave.tech_matrix.emoji_sketcher.ui.adapter.OnItemClickListener
 import timber.log.Timber
 import javax.inject.Inject
 

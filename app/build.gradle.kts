@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "softsuave.tech_matrix.draw_emoji_get_emoji"
+    namespace = "softsuave.tech_matrix.emoji_sketcher"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "softsuave.tech_matrix.draw_emoji_get_emoji"
+        applicationId = "softsuave.tech_matrix.emoji_sketcher"
         minSdk = 24
         targetSdk = 34
         versionCode = 1

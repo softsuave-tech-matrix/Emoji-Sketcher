@@ -50,7 +50,7 @@
 
             </LinearLayout>
 
-            <softsuave.tech_matrix.draw_emoji_get_emoji.widget.DrawingViewWithControls
+            <softsuave.tech_matrix.emoji_sketcher.widget.DrawingViewWithControls
                 android:id="@+id/drawingView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

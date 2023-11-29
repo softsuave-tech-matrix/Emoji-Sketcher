@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "softsuave.tech_matrix.drawemojigetemoji"
+    namespace = "softsuave.tech_matrix.emoji_sketcher"
     compileSdk = 33
 
     defaultConfig {
