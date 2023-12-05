@@ -20,6 +20,13 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 
+-dontwarn retrofit.**
+-keep class retrofit.** { *; }
+#-keepattributes Signature
+#-keepattributes Exceptions
+
+#-keepattributes Signature
+#-keepattributes *Annotation*
 -keep class okhttp3.** { *; }
 -keep interface okhttp3.** { *; }
 -dontwarn okhttp3.**
@@ -37,12 +44,13 @@
 -keep class androidx.appcompat.widget.** { *; }
 -keep class softsuave.tech_matrix.emoji_sketcher.ui.EmojiDrawPresenter { *; }
 
+
 # RxJava
 -dontwarn rx.**
 -keep class rx.** { *; }
 -keep interface rx.** { *; }
 -dontwarn sun.misc.Unsafe
-# If using RxJava 2, add these rules:
+# RxJava 2
 -dontwarn io.reactivex.**
 -keep class io.reactivex.** { *; }
 -keep interface io.reactivex.** { *; }

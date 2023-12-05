@@ -9,6 +9,7 @@ import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
+import softsuave.tech_matrix.emoji_sketcher.BuildConfig
 import javax.inject.Singleton
 
 @Module
@@ -18,7 +19,11 @@ class ServiceModule {
     @Singleton
     fun provideRetrofit(): Retrofit {
         val loggingInterceptor = HttpLoggingInterceptor()
-        loggingInterceptor.level = HttpLoggingInterceptor.Level.BODY
+        if (BuildConfig.DEBUG) {
+            loggingInterceptor.apply {
+                this.level = HttpLoggingInterceptor.Level.BODY
+            }
+        }
         val client = OkHttpClient.Builder()
             .addInterceptor(loggingInterceptor)
             .build()

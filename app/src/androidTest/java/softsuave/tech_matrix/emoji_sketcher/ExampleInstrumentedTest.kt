@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("softsuave.tech_matrix.draw_emoji_get_emoji", appContext.packageName)
+        assertEquals("softsuave.tech_matrix.emoji_sketcher", appContext.packageName)
     }
 }

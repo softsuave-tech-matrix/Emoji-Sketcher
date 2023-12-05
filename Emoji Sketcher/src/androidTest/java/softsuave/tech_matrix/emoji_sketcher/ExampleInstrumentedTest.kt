@@ -1,4 +1,4 @@
-package softsuave.tech_matrix.drawemojigetemoji
+package softsuave.tech_matrix.emoji_sketcher
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("softsuave.tech_matrix.drawemojigetemoji.test", appContext.packageName)
+        assertEquals("softsuave.tech_matrix.emoji_sketcher.test", appContext.packageName)
     }
 }

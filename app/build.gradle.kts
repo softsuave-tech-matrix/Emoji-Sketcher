@@ -17,15 +17,25 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        signingConfig = signingConfigs.getByName("debug")
+    }
+    buildFeatures {
+        buildConfig = true
     }
 
     buildTypes {
+        debug {
+            buildConfigField("boolean", "DEBUG", "true")
+        }
         release {
-            isMinifyEnabled = false
+            isDebuggable = false
+            isShrinkResources = true
+            isMinifyEnabled = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            buildConfigField("boolean", "DEBUG", "false")
         }
     }
     compileOptions {

@@ -1,4 +1,4 @@
-package softsuave.tech_matrix.draw_emoji_gete_moji.ui
+package softsuave.tech_matrix.emoji_sketcher.ui
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,7 +9,6 @@ import io.reactivex.disposables.CompositeDisposable
 import softsuave.tech_matrix.emoji_sketcher.ui.adapter.EmojiDetectedAdapter
 import softsuave.tech_matrix.emoji_sketcher.MyApplication
 import softsuave.tech_matrix.emoji_sketcher.databinding.DrawEmojiActivityBinding
-import softsuave.tech_matrix.emoji_sketcher.ui.EmojiDrawContract
 import softsuave.tech_matrix.emoji_sketcher.ui.adapter.OnItemClickListener
 import timber.log.Timber
 import javax.inject.Inject

@@ -9,60 +9,32 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e55ebdd-dcd3-4a12-a3e0-6901be8be837" name="Changes" comment="created new module library">
+    <list default="true" id="2e55ebdd-dcd3-4a12-a3e0-6901be8be837" name="Changes" comment="changed root project name to Emoji Sketcher">
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DrawEmojiGetEmoji/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/DrawEmojiGetEmoji/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DrawEmojiGetEmoji/src/main/java/softsuave/tech_matrix/draw_emoji_gete_moji/ui/DrawEmojiActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/DrawEmojiGetEmoji/src/main/java/softsuave/tech_matrix/draw_emoji_gete_moji/ui/DrawEmojiActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DrawEmojiGetEmoji/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Emoji Sketcher/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DrawEmojiGetEmoji/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/Emoji Sketcher/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DrawEmojiGetEmoji/consumer-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/Emoji Sketcher/consumer-rules.pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DrawEmojiGetEmoji/proguard-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/Emoji Sketcher/proguard-rules.pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DrawEmojiGetEmoji/src/androidTest/java/softsuave/tech_matrix/drawemojigetemoji/ExampleInstrumentedTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Emoji Sketcher/src/androidTest/java/softsuave/tech_matrix/emoji_sketcher/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DrawEmojiGetEmoji/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Emoji Sketcher/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DrawEmojiGetEmoji/src/main/java/softsuave/tech_matrix/draw_emoji_gete_moji/ui/DrawEmojiActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Emoji Sketcher/src/main/java/softsuave/tech_matrix/emoji_sketcher/ui/DrawEmojiActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DrawEmojiGetEmoji/src/test/java/softsuave/tech_matrix/drawemojigetemoji/ExampleUnitTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Emoji Sketcher/src/test/java/softsuave/tech_matrix/emoji_sketcher/ExampleUnitTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/softsuave/tech_matrix/draw_emoji_get_emoji/ExampleInstrumentedTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/softsuave/tech_matrix/emoji_sketcher/ExampleInstrumentedTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/MyApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/emoji_sketcher/MyApplication.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/api/ApiConstants.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/emoji_sketcher/api/ApiConstants.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/api/EmojiDetectionProvider.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/emoji_sketcher/api/EmojiDetectionProvider.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/api/EmojiDetectionRequest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/emoji_sketcher/api/EmojiDetectionRequest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/api/EmojiDetectionService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/emoji_sketcher/api/EmojiDetectionService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/data/EmojiToDraw.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/emoji_sketcher/data/EmojiToDraw.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/data/EmojiToDrawProvider.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/emoji_sketcher/data/EmojiToDrawProvider.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/di/ActivityScope.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/emoji_sketcher/di/ActivityScope.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/di/ApplicationComponent.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/emoji_sketcher/di/ApplicationComponent.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/di/ApplicationModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/emoji_sketcher/di/ApplicationModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/di/DrawEmoji/DrawEmojiComponent.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/emoji_sketcher/di/DrawEmoji/DrawEmojiComponent.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/di/DrawEmoji/DrawEmojiConfigurationModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/emoji_sketcher/di/DrawEmoji/DrawEmojiConfigurationModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/di/Qualifiers.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/emoji_sketcher/di/Qualifiers.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/di/ServiceModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/emoji_sketcher/di/ServiceModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/model/Emoji.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/emoji_sketcher/model/Emoji.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/model/Stroke.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/emoji_sketcher/model/Stroke.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/mvp/BasePresenter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/emoji_sketcher/mvp/BasePresenter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/mvp/EmojiDrawMvpModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/emoji_sketcher/mvp/EmojiDrawMvpModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/mvp/MVP.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/emoji_sketcher/mvp/MVP.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/ui/DrawEmojiActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/emoji_sketcher/ui/DrawEmojiActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/ui/EmojiDrawContract.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/emoji_sketcher/ui/EmojiDrawContract.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/ui/EmojiDrawPresenter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/emoji_sketcher/ui/EmojiDrawPresenter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/ui/adapter/EmojiDetectedAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/emoji_sketcher/ui/adapter/EmojiDetectedAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/ui/adapter/EmojiDetectedViewHolder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/emoji_sketcher/ui/adapter/EmojiDetectedViewHolder.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/ui/adapter/EmojiDiffCallback.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/emoji_sketcher/ui/adapter/EmojiDiffCallback.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/ui/example/GetEmojiActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/emoji_sketcher/ui/example/GetEmojiActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/ui/example/GetEmojiFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/emoji_sketcher/ui/example/GetEmojiFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/util/EmojiFileReader.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/emoji_sketcher/util/EmojiFileReader.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/util/FixedEmojiToDrawProvider.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/emoji_sketcher/util/FixedEmojiToDrawProvider.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/widget/DrawingView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/emoji_sketcher/widget/DrawingView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/widget/DrawingViewWithControls.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/emoji_sketcher/widget/DrawingViewWithControls.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/draw_emoji_activity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/draw_emoji_activity.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/drawing_view_with_controls.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/drawing_view_with_controls.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-night/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-night/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/softsuave/tech_matrix/draw_emoji_get_emoji/ExampleUnitTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/softsuave/tech_matrix/emoji_sketcher/ExampleUnitTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/proguard-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/app/proguard-rules.pro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/softsuave/tech_matrix/emoji_sketcher/ExampleInstrumentedTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/softsuave/tech_matrix/emoji_sketcher/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/emoji_sketcher/di/ServiceModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/emoji_sketcher/di/ServiceModule.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,25 +58,7 @@
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="DrawEmoji GetEmoji" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="DrawEmoji GetEmoji" type="f1a62948:ProjectNode" />
-                <item name="app" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="DrawEmoji GetEmoji" type="f1a62948:ProjectNode" />
-                <item name="app" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="DrawEmoji GetEmoji" type="f1a62948:ProjectNode" />
-                <item name="app" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="other" type="c8890929:TasksNode$1" />
+                <item name="Emoji Sketcher" type="f1a62948:ProjectNode" />
               </path>
             </expand>
             <select />
@@ -142,31 +96,32 @@
     <option name="abbreviatePackageNames" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DEBUGGABLE_DEVICE": "oneplus-ac2001-79a1cac5",
-    "DEBUGGABLE_PROCESS": "softsuave.tech_matrix.draw_emoji_get_emoji",
-    "DEBUGGER_ID": "Auto",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "SHOW_ALL_PROCESSES": "false",
-    "android-custom-view/Users/kasiguruprasad/Documents/Muthu Selvam/Android ProjectFolder/Draw Emoji Get Emoji/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/widget/DrawingView.kt_SELECTED": "DrawingView",
-    "android-custom-view/Users/kasiguruprasad/Documents/Muthu Selvam/Android ProjectFolder/Draw Emoji Get Emoji/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/widget/DrawingViewWithControls.kt_SELECTED": "DrawingViewWithControls",
-    "android-custom-view/Users/kasiguruprasad/Documents/Muthu Selvam/Android ProjectFolder/Draw Emoji Get Emoji/app/src/main/java/softsuave/tech_matrix/emoji_sketcher/widget/DrawingView.kt_SELECTED": "DrawingView",
-    "android-custom-view/Users/kasiguruprasad/Documents/Muthu Selvam/Android ProjectFolder/Draw Emoji Get Emoji/app/src/main/java/softsuave/tech_matrix/emoji_sketcher/widget/DrawingViewWithControls.kt_SELECTED": "DrawingViewWithControls",
-    "cidr.known.project.marker": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "last_opened_file_path": "/Users/kasiguruprasad/Documents/Muthu Selvam/Android ProjectFolder/Draw Emoji Get Emoji/app/src/main/res/layout",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.17",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "show.migrate.to.gradle.popup": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DEBUGGABLE_DEVICE&quot;: &quot;oneplus-ac2001-79a1cac5&quot;,
+    &quot;DEBUGGABLE_PROCESS&quot;: &quot;softsuave.tech_matrix.draw_emoji_get_emoji&quot;,
+    &quot;DEBUGGER_ID&quot;: &quot;Auto&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;SHOW_ALL_PROCESSES&quot;: &quot;false&quot;,
+    &quot;android-custom-view/Users/kasiguruprasad/Documents/Muthu Selvam/Android ProjectFolder/Draw Emoji Get Emoji/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/widget/DrawingView.kt_SELECTED&quot;: &quot;DrawingView&quot;,
+    &quot;android-custom-view/Users/kasiguruprasad/Documents/Muthu Selvam/Android ProjectFolder/Draw Emoji Get Emoji/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/widget/DrawingViewWithControls.kt_SELECTED&quot;: &quot;DrawingViewWithControls&quot;,
+    &quot;android-custom-view/Users/kasiguruprasad/Documents/Muthu Selvam/Android ProjectFolder/Draw Emoji Get Emoji/app/src/main/java/softsuave/tech_matrix/emoji_sketcher/widget/DrawingView.kt_SELECTED&quot;: &quot;DrawingView&quot;,
+    &quot;android-custom-view/Users/kasiguruprasad/Documents/Muthu Selvam/Android ProjectFolder/Draw Emoji Get Emoji/app/src/main/java/softsuave/tech_matrix/emoji_sketcher/widget/DrawingViewWithControls.kt_SELECTED&quot;: &quot;DrawingViewWithControls&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/kasiguruprasad/Documents/Muthu Selvam/Android ProjectFolder/Draw Emoji Get Emoji/app/src/main/res/layout&quot;,
+    &quot;memory.settings.postsync.last.time.stamp&quot;: &quot;1701671515914&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Build Variants&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
   }
-}]]></component>
+}</component>
   <component name="PsdUISettings">
-    <option name="LAST_EDITED_BUILD_TYPE" value="release" />
+    <option name="LAST_EDITED_BUILD_TYPE" value="debug" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -251,8 +206,19 @@
       <option name="ACTIVITY_CLASS" value="" />
       <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
       <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Emoji_Sketcher.app.main" />
       <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Emoji_Sketcher.app.main" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -314,7 +280,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701151385247</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="changed root project name to Emoji Sketcher">
+      <created>1701249867173</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1701249867173</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -324,6 +297,7 @@
     <MESSAGE value="worked on UI changes and gradle updates" />
     <MESSAGE value="Created example activity and fragment for to call DrawEmoji Activity" />
     <MESSAGE value="created new module library" />
-    <option name="LAST_COMMIT_MESSAGE" value="created new module library" />
+    <MESSAGE value="changed root project name to Emoji Sketcher" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed root project name to Emoji Sketcher" />
   </component>
 </project>

@@ -1,4 +1,4 @@
-package softsuave.tech_matrix.drawemojigetemoji
+package softsuave.tech_matrix.emoji_sketcher
 
 import org.junit.Test
 
