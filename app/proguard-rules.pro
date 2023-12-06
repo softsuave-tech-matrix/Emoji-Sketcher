@@ -20,38 +20,38 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 
--keep class okhttp3.** { *; }
--keep interface okhttp3.** { *; }
--dontwarn okhttp3.**
--dontnote okhttp3.**
-
--keepclassmembers class softsuave.tech_matrix.emoji_sketcher.api** { <fields>;}
--keepclassmembers class softsuave.tech_matrix.emoji_sketcher.model** { <fields>;}
--keepclassmembers class softsuave.tech_matrix.emoji_sketcher.data** { <fields>;}
--keepclassmembers class softsuave.tech_matrix.emoji_sketcher.di** { <fields>;}
-
--keep class com.google.crypto.** { *; }  #For app crash when open the app
-
--keep class **$$Parcelable { *; }
-
--keep class androidx.appcompat.widget.** { *; }
--keep class softsuave.tech_matrix.emoji_sketcher.ui.EmojiDrawPresenter { *; }
-
-# RxJava
--dontwarn rx.**
--keep class rx.** { *; }
--keep interface rx.** { *; }
--dontwarn sun.misc.Unsafe
-# If using RxJava 2, add these rules:
--dontwarn io.reactivex.**
--keep class io.reactivex.** { *; }
--keep interface io.reactivex.** { *; }
-
-# Retrofit
--dontwarn retrofit2.**
--keep class retrofit2.** { *; }
--keepattributes Signature
--keepattributes Exceptions
--keepclasseswithmembers class * {
-    @retrofit2.http.* <methods>;
-}
+#-keep class okhttp3.** { *; }
+#-keep interface okhttp3.** { *; }
+#-dontwarn okhttp3.**
+#-dontnote okhttp3.**
+#
+#-keepclassmembers class softsuave.tech_matrix.emoji_sketcher.api** { <fields>;}
+#-keepclassmembers class softsuave.tech_matrix.emoji_sketcher.model** { <fields>;}
+#-keepclassmembers class softsuave.tech_matrix.emoji_sketcher.data** { <fields>;}
+#-keepclassmembers class softsuave.tech_matrix.emoji_sketcher.di** { <fields>;}
+#
+#-keep class com.google.crypto.** { *; }  #For app crash when open the app
+#
+#-keep class **$$Parcelable { *; }
+#
+#-keep class androidx.appcompat.widget.** { *; }
+#-keep class softsuave.tech_matrix.emoji_sketcher.ui.EmojiDrawPresenter { *; }
+#
+## RxJava
+#-dontwarn rx.**
+#-keep class rx.** { *; }
+#-keep interface rx.** { *; }
+#-dontwarn sun.misc.Unsafe
+## If using RxJava 2, add these rules:
+#-dontwarn io.reactivex.**
+#-keep class io.reactivex.** { *; }
+#-keep interface io.reactivex.** { *; }
+#
+## Retrofit
+#-dontwarn retrofit2.**
+#-keep class retrofit2.** { *; }
+#-keepattributes Signature
+#-keepattributes Exceptions
+#-keepclasseswithmembers class * {
+#    @retrofit2.http.* <methods>;
+#}
