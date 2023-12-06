@@ -2,6 +2,7 @@ plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
     id("kotlin-kapt")
+    id ("maven-publish")
 }
 
 android {
@@ -35,6 +36,25 @@ android {
         generateStubs = true
     }
 }
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("maven") {
+                groupId = "softsuave-tech-matrix"
+                artifactId = "emoji-sketcher"
+                version = "1.0.0"
+
+                from(components["release"])
+            }
+        }
+        repositories {
+            maven {
+                url = uri("https://jitpack.io")
+            }
+        }
+    }
+}
+
 
 dependencies {
     implementation("androidx.core:core-ktx:1.12.0")
