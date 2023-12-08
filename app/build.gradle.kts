@@ -62,6 +62,7 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.10.0")
     implementation("androidx.compose.ui:ui-graphics-android:1.5.4")
+    implementation("com.google.guava:guava:32.1.3-jre")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     implementation("androidx.recyclerview:recyclerview:1.3.2")
