@@ -15,4 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Emoji Sketcher"
 include(":app")
-include(":Emoji Sketcher")
+include(":emoji-sketcher")
