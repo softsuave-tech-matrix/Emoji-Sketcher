@@ -2,7 +2,7 @@ plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
     id("kotlin-kapt")
-    id ("maven-publish")
+    id("maven-publish")
 }
 
 android {
@@ -39,12 +39,13 @@ android {
 afterEvaluate {
     publishing {
         publications {
-            create<MavenPublication>("maven") {
+            register<MavenPublication>("maven") {
                 groupId = "softsuave-tech-matrix"
                 artifactId = "emoji-sketcher"
                 version = "0.0.4"
-
-                from(components["release"])
+                afterEvaluate {
+                    from(components["release"])
+                }
             }
         }
         repositories {
