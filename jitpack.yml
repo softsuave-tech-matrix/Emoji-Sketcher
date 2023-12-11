@@ -2,6 +2,3 @@ jdk:
   - openjdk17
 before_install:
   - ./scripts/prepareJitpackEnvironment.sh
-install:
-  - FILE="-Dfile=emoji-sketcher.aar"
-  - mvn install:install-file $FILE -DgroupId=com.github.softsuave-tech-matrix -DartifactId=emoji-sketcher -Dversion=0.0.8 -Dpackaging=aar -DgeneratePom=true

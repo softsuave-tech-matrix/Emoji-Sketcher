@@ -9,11 +9,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e55ebdd-dcd3-4a12-a3e0-6901be8be837" name="Changes" comment="pom file deleted">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emoji-sketcher/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/emoji-sketcher/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jitpack.yml" beforeDir="false" afterPath="$PROJECT_DIR$/jitpack.yml" afterDir="false" />
-    </list>
+    <list default="true" id="2e55ebdd-dcd3-4a12-a3e0-6901be8be837" name="Changes" comment="publish version updated" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -348,7 +344,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702293927054</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="publish version updated">
+      <created>1702294867538</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1702294867538</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -368,6 +371,7 @@
     <MESSAGE value="updated gradle" />
     <MESSAGE value="updated publish version" />
     <MESSAGE value="pom file deleted" />
-    <option name="LAST_COMMIT_MESSAGE" value="pom file deleted" />
+    <MESSAGE value="publish version updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="publish version updated" />
   </component>
 </project>
