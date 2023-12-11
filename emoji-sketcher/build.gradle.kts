@@ -42,7 +42,7 @@ afterEvaluate {
             register<MavenPublication>("maven") {
                 groupId = "softsuave-tech-matrix"
                 artifactId = "emoji-sketcher"
-                version = "0.0.5"
+                version = "0.0.7"
                 from(components["release"])
             }
         }
