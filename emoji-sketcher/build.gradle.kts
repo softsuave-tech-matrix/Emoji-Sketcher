@@ -48,11 +48,11 @@ android {
 afterEvaluate {
     publishing {
         publications {
-            register<MavenPublication>("maven") {
+            create<MavenPublication>("maven") {
                 from(components["release"])
                 groupId = "softsuave-tech-matrix"
                 artifactId = "emoji-sketcher"
-                version = "1.0.2"
+                version = "1.0.3"
             }
         }
         repositories {
