@@ -8,21 +8,27 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
+import softsuave.tech_matrix.emoji_sketcher.CallGetEmoji
 import softsuave.tech_matrix.emoji_sketcher.databinding.GetEmojiActivityBinding
-import softsuave.tech_matrix.emoji_sketcher.ui.DrawEmojiActivity
+import softsuave.tech_matrix.emoji_sketcher.ui.adapter.OnItemClickListener
+import timber.log.Timber
 
-class GetEmojiActivity : AppCompatActivity() {
+class GetEmojiActivity : AppCompatActivity(), OnItemClickListener {
     private var _binding: GetEmojiActivityBinding? = null
     private val binding by lazy { _binding!! }
     private val REQUEST_EMOJI_ICON_CODE = 1234
-    private val drawEmojiLauncher =
-        registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
-            if (result.resultCode == REQUEST_EMOJI_ICON_CODE) {
-                val data: Intent? = result.data
-                val selectedEmoji = data?.getStringExtra("selectedEmoji")
-                binding.emojiIcon.text = selectedEmoji
+    private lateinit var callGetEmoji: CallGetEmoji
+
+    private val launcher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
+        if (result.resultCode == REQUEST_EMOJI_ICON_CODE) {
+            val data: Intent? = result.data
+            val selectedEmoji = data?.getStringExtra("selectedEmoji")
+            selectedEmoji?.let {
+                callGetEmoji.handleActivityResult(it)
+                binding.emojiIcon.text = it
             }
         }
+    }
     val Context.isInternetAvailable: Boolean
         get() {
             val connectivityManager =
@@ -36,25 +42,23 @@ class GetEmojiActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         _binding = GetEmojiActivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        callGetEmoji = CallGetEmoji(this)
+        callGetEmoji.setListener(this)
         binding.getEmojiButton.setOnClickListener {
             if (isInternetAvailable) {
-                //From Activity
-                val intent = Intent(this, DrawEmojiActivity::class.java)
-                drawEmojiLauncher.launch(intent)
-
-                //Call From Fragment
-                /*            val fragment = GetEmojiFragment()
-                            val bundle = Bundle()
-                            fragment.arguments = bundle
-
-                            // Add the fragment to the activity
-                            supportFragmentManager.beginTransaction()
-                                .replace(R.id.fragment_container, fragment)
-                                .commit()*/
+                callGetEmoji.startActivityForEmoji(launcher)
             } else {
                 Toast.makeText(this, "Please check your internet connection.", Toast.LENGTH_SHORT)
                     .show()
             }
         }
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        launcher.unregister()
+    }
+    override fun onItemClick(emoji: String) {
+        Timber.tag("ClickedItemFromLibrary").d(emoji)
     }
 }

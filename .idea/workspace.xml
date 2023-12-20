@@ -9,7 +9,21 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e55ebdd-dcd3-4a12-a3e0-6901be8be837" name="Changes" comment="publish version updated" />
+    <list default="true" id="2e55ebdd-dcd3-4a12-a3e0-6901be8be837" name="Changes" comment="publish version updated">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/emoji_sketcher/CallGetEmoji.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/emoji-sketcher/src/main/java/softsuave/tech_matrix/emoji_sketcher/CallGetEmoji.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/emoji_sketcher/ui/example/GetEmojiActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/softsuave/tech_matrix/emoji_sketcher/ui/example/GetEmojiActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emoji-sketcher/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/emoji-sketcher/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emoji-sketcher/src/main/java/softsuave/tech_matrix/emoji_sketcher/ui/DrawEmojiActivity.kt" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,30 +90,30 @@
     <option name="abbreviatePackageNames" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DEBUGGABLE_DEVICE": "oneplus-ac2001-79a1cac5",
-    "DEBUGGABLE_PROCESS": "softsuave.tech_matrix.draw_emoji_get_emoji",
-    "DEBUGGER_ID": "Auto",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "SHOW_ALL_PROCESSES": "false",
-    "android-custom-view/Users/kasiguruprasad/Documents/Muthu Selvam/Android ProjectFolder/Draw Emoji Get Emoji/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/widget/DrawingView.kt_SELECTED": "DrawingView",
-    "android-custom-view/Users/kasiguruprasad/Documents/Muthu Selvam/Android ProjectFolder/Draw Emoji Get Emoji/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/widget/DrawingViewWithControls.kt_SELECTED": "DrawingViewWithControls",
-    "android-custom-view/Users/kasiguruprasad/Documents/Muthu Selvam/Android ProjectFolder/Draw Emoji Get Emoji/app/src/main/java/softsuave/tech_matrix/emoji_sketcher/widget/DrawingView.kt_SELECTED": "DrawingView",
-    "android-custom-view/Users/kasiguruprasad/Documents/Muthu Selvam/Android ProjectFolder/Draw Emoji Get Emoji/app/src/main/java/softsuave/tech_matrix/emoji_sketcher/widget/DrawingViewWithControls.kt_SELECTED": "DrawingViewWithControls",
-    "cidr.known.project.marker": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "last_opened_file_path": "/Users/kasiguruprasad/Documents/Muthu Selvam/Android ProjectFolder/Draw Emoji Get Emoji/app/src/main/res/layout",
-    "memory.settings.postsync.last.time.stamp": "1701940740666",
-    "project.structure.last.edited": "Dependencies",
-    "project.structure.proportion": "0.17",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
-    "show.migrate.to.gradle.popup": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DEBUGGABLE_DEVICE&quot;: &quot;oneplus-ac2001-79a1cac5&quot;,
+    &quot;DEBUGGABLE_PROCESS&quot;: &quot;softsuave.tech_matrix.draw_emoji_get_emoji&quot;,
+    &quot;DEBUGGER_ID&quot;: &quot;Auto&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;SHOW_ALL_PROCESSES&quot;: &quot;false&quot;,
+    &quot;android-custom-view/Users/kasiguruprasad/Documents/Muthu Selvam/Android ProjectFolder/Draw Emoji Get Emoji/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/widget/DrawingView.kt_SELECTED&quot;: &quot;DrawingView&quot;,
+    &quot;android-custom-view/Users/kasiguruprasad/Documents/Muthu Selvam/Android ProjectFolder/Draw Emoji Get Emoji/app/src/main/java/softsuave/tech_matrix/draw_emoji_get_emoji/widget/DrawingViewWithControls.kt_SELECTED&quot;: &quot;DrawingViewWithControls&quot;,
+    &quot;android-custom-view/Users/kasiguruprasad/Documents/Muthu Selvam/Android ProjectFolder/Draw Emoji Get Emoji/app/src/main/java/softsuave/tech_matrix/emoji_sketcher/widget/DrawingView.kt_SELECTED&quot;: &quot;DrawingView&quot;,
+    &quot;android-custom-view/Users/kasiguruprasad/Documents/Muthu Selvam/Android ProjectFolder/Draw Emoji Get Emoji/app/src/main/java/softsuave/tech_matrix/emoji_sketcher/widget/DrawingViewWithControls.kt_SELECTED&quot;: &quot;DrawingViewWithControls&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/kasiguruprasad/Documents/Muthu Selvam/Android ProjectFolder/Draw Emoji Get Emoji/app/src/main/res/layout&quot;,
+    &quot;memory.settings.postsync.last.time.stamp&quot;: &quot;1701940740666&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Dependencies&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
   }
-}]]></component>
+}</component>
   <component name="PsdUISettings">
     <option name="LAST_EDITED_BUILD_TYPE" value="debug" />
   </component>
@@ -116,11 +130,11 @@
       <recent name="softsuave.tech_matrix.draw_emoji_get_emoji.ui.example" />
     </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="softsuave.tech_matrix.emoji_sketcher" />
       <recent name="softsuave.tech_matrix.drawemojigetemoji" />
       <recent name="softsuave.tech_matrix.drawemojigetemoji.ui" />
       <recent name="softsuave.tech_matrix.draw_emoji_get_emoji.util" />
       <recent name="softsuave.tech_matrix.draw_emoji_get_emoji.ui.adapter" />
-      <recent name="softsuave.tech_matrix.draw_emoji_get_emoji.ui" />
     </key>
   </component>
   <component name="RunManager">
