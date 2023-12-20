@@ -32,7 +32,7 @@ android {
         jvmTarget = "17"
     }
 }
-publishing {
+/*publishing {
     publications {
         register<MavenPublication>("release") {
             groupId = "softsuave-tech-matrix"
@@ -44,8 +44,24 @@ publishing {
             }
         }
     }
+}*/
+afterEvaluate {
+    publishing {
+        publications {
+            register<MavenPublication>("maven") {
+                from(components["release"])
+                groupId = "softsuave-tech-matrix"
+                artifactId = "emoji-sketcher"
+                version = "1.0.2"
+            }
+        }
+        repositories {
+            maven {
+                url = uri("https://jitpack.io")
+            }
+        }
+    }
 }
-
 dependencies {
 
     implementation("androidx.core:core-ktx:1.9.0")
