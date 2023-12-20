@@ -1,0 +1,13 @@
+<project>
+    <dependency>
+        <groupId>com.github.softsuave-tech-matrix</groupId>
+        <artifactId>emoji-sketcher</artifactId>
+        <version>1.0.4</version>
+    </dependency>
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
+</project>
