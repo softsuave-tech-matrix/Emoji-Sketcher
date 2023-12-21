@@ -5,15 +5,15 @@ import android.content.Intent
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import softsuave.tech_matrix.emoji_sketcher.CallGetEmoji
 import softsuave.tech_matrix.emoji_sketcher.databinding.GetEmojiActivityBinding
-import softsuave.tech_matrix.emoji_sketcher.ui.adapter.OnItemClickListener
+import softsuave.tech_matrix.emoji_sketcher.util.GetEmojiItemClickListener
+import timber.log.Timber
 
-class GetEmojiActivity : AppCompatActivity(), OnItemClickListener {
+class GetEmojiActivity : AppCompatActivity(), GetEmojiItemClickListener {
     private var _binding: GetEmojiActivityBinding? = null
     private val binding by lazy { _binding!! }
     private val REQUEST_EMOJI_ICON_CODE = 1234
@@ -58,7 +58,9 @@ class GetEmojiActivity : AppCompatActivity(), OnItemClickListener {
         super.onDestroy()
         launcher.unregister()
     }
-    override fun onItemClick(emoji: String) {
-        Log.d("ClickedItemFromLibrary", emoji);
+
+    override fun getEmojiItemClick(emoji: String) {
+        Timber.tag("ClickedItemFromLibrary").d(emoji);
     }
+
 }

@@ -6,11 +6,12 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import softsuave.tech_matrix.emoji_sketcher.R
+import softsuave.tech_matrix.emoji_sketcher.util.GetEmojiItemClickListener
 
 class EmojiDetectedAdapter(val context: Context) : RecyclerView.Adapter<EmojiDetectedViewHolder>() {
 
     lateinit var emojiToDraw: String
-    private var itemClickListener: OnItemClickListener? = null
+    private var itemClickListener: GetEmojiItemClickListener? = null
 
     var detectedList: List<String> = emptyList()
         set(list) {
@@ -31,15 +32,11 @@ class EmojiDetectedAdapter(val context: Context) : RecyclerView.Adapter<EmojiDet
         val detectedEmoji = detectedList[position]
         holder.bind(detectedEmoji, detectedEmoji == emojiToDraw)
         holder.itemView.setOnClickListener {
-            itemClickListener?.onItemClick(detectedEmoji)
+            itemClickListener?.getEmojiItemClick(detectedEmoji)
         }
     }
 
-    fun setOnItemClickListener(listener: OnItemClickListener) {
+    fun setOnItemClickListener(listener: GetEmojiItemClickListener) {
         itemClickListener = listener
     }
-}
-
-interface OnItemClickListener {
-    fun onItemClick(emoji: String)
 }

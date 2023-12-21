@@ -6,14 +6,14 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import softsuave.tech_matrix.emoji_sketcher.MyApplication
-import softsuave.tech_matrix.emoji_sketcher.ui.adapter.OnItemClickListener
 import io.reactivex.disposables.CompositeDisposable
 import softsuave.tech_matrix.emoji_sketcher.databinding.DrawEmojiActivityBinding
 import softsuave.tech_matrix.emoji_sketcher.ui.adapter.EmojiDetectedAdapter
+import softsuave.tech_matrix.emoji_sketcher.util.GetEmojiItemClickListener
 import timber.log.Timber
 import javax.inject.Inject
 
-class DrawEmojiActivity : AppCompatActivity(), EmojiDrawContract.View, OnItemClickListener {
+class DrawEmojiActivity : AppCompatActivity(), EmojiDrawContract.View, GetEmojiItemClickListener {
 
     @Inject
     lateinit var presenter: EmojiDrawContract.Presenter
@@ -74,19 +74,18 @@ class DrawEmojiActivity : AppCompatActivity(), EmojiDrawContract.View, OnItemCli
 
     override fun showErrorMessage() {
         Timber.d("\uD83D\uDE1E Check your internet connection \uD83D\uDCF6")
-       // Toast.makeText(this, R.string.network_error, Toast.LENGTH_SHORT).show()
-    }
-
-    override fun onItemClick(emoji: String) {
-        Timber.d("Emoji String ====> %s", emoji)
-        val returnIntent = Intent()
-        returnIntent.putExtra("selectedEmoji", emoji)
-        setResult(REQUEST_EMOJI_ICON_CODE, returnIntent)
-        finish()
     }
 
     override fun onDestroy() {
         super.onDestroy()
         disposables.clear()
+    }
+
+    override fun getEmojiItemClick(emoji: String) {
+        Timber.d("Emoji String ====> %s", emoji)
+        val returnIntent = Intent()
+        returnIntent.putExtra("selectedEmoji", emoji)
+        setResult(REQUEST_EMOJI_ICON_CODE, returnIntent)
+        finish()
     }
 }
