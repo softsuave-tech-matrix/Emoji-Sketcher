@@ -52,7 +52,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "softsuave-tech-matrix"
                 artifactId = "emoji_sketcher"
-                version = "3.0.0"
+                version = "3.0.1"
             }
         }
         repositories {
