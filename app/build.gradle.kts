@@ -68,6 +68,6 @@ dependencies {
     implementation("androidx.recyclerview:recyclerview:1.3.2")
     implementation("androidx.recyclerview:recyclerview-selection:1.1.0")
     implementation ("androidx.constraintlayout:constraintlayout:2.1.4")
-    implementation("softsuave-tech-matrix:emoji_sketcher:3.0.5")
+    implementation("softsuave-tech-matrix:emoji_sketcher:4.0.1")
 
  }

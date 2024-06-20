@@ -6,7 +6,7 @@ plugins {
     id("kotlin-kapt")
 }
 group = "softsuave-tech-matrix"
-version = "1.0.0"
+version = "4.0.1"
 android {
     namespace = "softsuave.tech_matrix.emoji_sketcher"
     compileSdk = 34
@@ -62,7 +62,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "softsuave-tech-matrix"
                 artifactId = "emoji_sketcher"
-                version = "3.0.5"
+                version = "4.0.1"
             }
         }
         //softsuave-tech-matrix.emoji_sketcher:3.0.4
