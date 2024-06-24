@@ -6,7 +6,7 @@ plugins {
     id("maven-publish")
 }
 android {
-    namespace = "softsuave.tech_matrix.emoji_sketcher"
+    namespace = "com.softsuave.emoji_sketcher"
     compileSdk = 34
 
     defaultConfig {
@@ -53,10 +53,23 @@ android {
     }
 }*/
 publishing {
+//    repositories {
+//        maven {
+//            name = "GitHubPackages"
+//            url = uri("https://maven.pkg.github.com/OWNER/REPOSITORY")
+//            credentials {
+//                username = project.findProperty("gpr.user") ?: System.getenv("USERNAME")
+//                password = project.findProperty("gpr.token") ?: System.getenv("TOKEN")
+//            }
+//        }
+//    }
     publications {
         register<MavenPublication>("release") {
             afterEvaluate {
                 from(components["release"])
+                groupId = "softsuave_tech_matrix"
+                artifactId = "emoji_sketcher"
+                version = "1.0.1"
             }
         }
     }
