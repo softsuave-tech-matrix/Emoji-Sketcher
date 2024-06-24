@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import softsuave.tech_matrix.EmojiSketcher
 import softsuave.tech_matrix.GetSelectedEmoji
 import softsuave.tech_matrix.builder.EmojiSketcherBuilder
-import softsuave.tech_matrix.emoji_sketcher.databinding.MainActivityLayoutBinding
+import softsuave.tech_matrix.emoji_sketcher_app.databinding.MainActivityLayoutBinding
 
 
 class MainActivity : AppCompatActivity(), GetSelectedEmoji {
