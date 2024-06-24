@@ -1,12 +1,5 @@
 jdk:
   - openjdk17
 before_install:
-  - ./scripts/prepareJitpackEnvironment.sh
-  - echo "Before Install"
   - sdk install java 17.0.10-open
   - sdk use java 17.0.10-open
-install:
-  - echo "Install"
-  - if ! bash ensure-java-17 use; then source ~/.sdkman/bin/sdkman-init.sh; fi
-  - java -version
-  - mvn install

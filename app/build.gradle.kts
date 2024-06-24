@@ -52,6 +52,8 @@ android {
 dependencies {
 
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
+    implementation(project(":emoji_sketcher"))
+//    implementation(project(":emoji_sketcher"))
 
 
     testImplementation("junit:junit:4.13.2")
