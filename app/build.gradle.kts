@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "softsuave.tech_matrix.emoji_sketcher"
+    namespace = "softsuave.tech_matrix.emoji_sketcher_app"
     compileSdk = 34
 
     defaultConfig {
@@ -45,7 +45,6 @@ android {
 
     buildFeatures {
         viewBinding = true
-        dataBinding = true
     }
 }
 
