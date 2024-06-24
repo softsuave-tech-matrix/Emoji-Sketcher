@@ -62,8 +62,8 @@ android {
                 afterEvaluate {
                 from(components["release"])
                 groupId = "softsuave-tech-matrix"
-                artifactId = "emoji-sketcher"
-                version = "4.0.1"
+                artifactId = "emoji_sketcher"
+                version = "4.0.4"
             }
         }
     }
