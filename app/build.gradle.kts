@@ -53,7 +53,6 @@ dependencies {
 
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
     implementation(project(":emoji_sketcher"))
-//    implementation(project(":emoji_sketcher"))
 
 
     testImplementation("junit:junit:4.13.2")
@@ -68,6 +67,5 @@ dependencies {
     implementation("androidx.recyclerview:recyclerview:1.3.2")
     implementation("androidx.recyclerview:recyclerview-selection:1.1.0")
     implementation ("androidx.constraintlayout:constraintlayout:2.1.4")
-    implementation("com.github.softsuave-tech-matrix:emoji_sketcher:4.0.4")
 
  }
