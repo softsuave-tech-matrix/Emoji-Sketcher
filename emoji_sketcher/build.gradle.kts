@@ -27,7 +27,7 @@ android {
             )
         }
     }
-    buildFeatures{
+    buildFeatures {
         viewBinding = true
         dataBinding = true
     }
@@ -38,7 +38,7 @@ android {
     kotlinOptions {
         jvmTarget = "17"
     }
-    kapt{
+    kapt {
         generateStubs = true
     }
 }
@@ -55,21 +55,15 @@ android {
         }
     }
 }*/
-afterEvaluate {
+
     publishing {
         publications {
-            register<MavenPublication>("maven") {
+            register<MavenPublication>("release") {
+                afterEvaluate {
                 from(components["release"])
                 groupId = "softsuave-tech-matrix"
-                artifactId = "emoji_sketcher"
+                artifactId = "emoji-sketcher"
                 version = "4.0.1"
-            }
-        }
-        //softsuave-tech-matrix.emoji_sketcher:3.0.4
-        repositories {
-            mavenLocal()
-            maven {
-                url = uri("https://jitpack.io")
             }
         }
     }
@@ -82,7 +76,7 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("androidx.recyclerview:recyclerview:1.3.2")
     implementation("androidx.recyclerview:recyclerview-selection:1.1.0")
-    implementation ("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     // dagger
     implementation("com.google.dagger:dagger:2.48")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
