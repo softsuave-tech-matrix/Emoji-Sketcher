@@ -7,8 +7,8 @@ import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import io.reactivex.disposables.CompositeDisposable
+import com.softsuave.emoji_sketcher.databinding.DrawEmojiActivityBinding
 import softsuave.tech_matrix.adapter.EmojiDetectedAdapter
-import softsuave.tech_matrix.emoji_sketcher.databinding.DrawEmojiActivityBinding
 import softsuave.tech_matrix.example.EmojiDrawContract
 import softsuave.tech_matrix.utils.GetEmojiItemClickListener
 import timber.log.Timber

@@ -56,20 +56,21 @@ publishing {
 //    repositories {
 //        maven {
 //            name = "GitHubPackages"
-//            url = uri("https://maven.pkg.github.com/OWNER/REPOSITORY")
+//            url = uri("https://maven.pkg.github.com/softsuave-tech-matrix/emoji_sketcher")
 //            credentials {
-//                username = project.findProperty("gpr.user") ?: System.getenv("USERNAME")
-//                password = project.findProperty("gpr.token") ?: System.getenv("TOKEN")
+//                username = project.findProperty("gpr.user").toString()
+//                password = project.findProperty("gpr.token").toString()
 //            }
 //        }
 //    }
     publications {
+
         register<MavenPublication>("release") {
             afterEvaluate {
                 from(components["release"])
                 groupId = "softsuave_tech_matrix"
                 artifactId = "emoji_sketcher"
-                version = "1.0.1"
+                version = "4.1.2"
             }
         }
     }

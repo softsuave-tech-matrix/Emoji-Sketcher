@@ -4,10 +4,10 @@ import android.content.Context
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.widget.RelativeLayout
+import com.softsuave.emoji_sketcher.databinding.DrawingViewWithControlsBinding
 
 import io.reactivex.Observable
 import io.reactivex.subjects.PublishSubject
-import softsuave.tech_matrix.emoji_sketcher.databinding.DrawingViewWithControlsBinding
 import softsuave.tech_matrix.model.Stroke
 
 //checkDebugAarMetadata

@@ -10,7 +10,7 @@ import android.view.MotionEvent
 import android.view.View
 import androidx.annotation.ColorInt
 import androidx.core.content.ContextCompat
-import softsuave.tech_matrix.emoji_sketcher.R
+import com.softsuave.emoji_sketcher.R
 import softsuave.tech_matrix.model.Stroke
 import io.reactivex.Observable
 import io.reactivex.subjects.PublishSubject

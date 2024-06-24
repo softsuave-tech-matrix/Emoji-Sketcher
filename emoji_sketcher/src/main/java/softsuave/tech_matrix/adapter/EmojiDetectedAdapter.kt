@@ -5,7 +5,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import softsuave.tech_matrix.emoji_sketcher.R
+import com.softsuave.emoji_sketcher.R
 import softsuave.tech_matrix.utils.GetEmojiItemClickListener
 
 class EmojiDetectedAdapter(val context: Context) : RecyclerView.Adapter<EmojiDetectedViewHolder>() {
