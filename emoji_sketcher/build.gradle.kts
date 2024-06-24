@@ -1,9 +1,9 @@
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
-    id ("maven-publish")
     id("kotlin-android")
     id("kotlin-kapt")
+    id("maven-publish")
 }
 group = "softsuave-tech-matrix"
 version = "4.0.1"
@@ -55,19 +55,21 @@ android {
         }
     }
 }*/
-
+afterEvaluate {
     publishing {
         publications {
             register<MavenPublication>("release") {
-                afterEvaluate {
+
                 from(components["release"])
                 groupId = "softsuave-tech-matrix"
                 artifactId = "emoji_sketcher"
-                version = "4.0.4"
+                version = "4.0.5"
             }
+
         }
     }
 }
+
 dependencies {
 
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")

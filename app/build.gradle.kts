@@ -1,9 +1,8 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    id("kotlin-android")
-    id("kotlin-kapt")
-    id ("maven-publish")
+
+
 }
 
 android {
@@ -42,9 +41,7 @@ android {
     kotlinOptions {
         jvmTarget = "17"
     }
-    kapt {
-        generateStubs = true
-    }
+
 
     buildFeatures {
         viewBinding = true
@@ -55,6 +52,7 @@ android {
 dependencies {
 
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
+
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
@@ -68,6 +66,6 @@ dependencies {
     implementation("androidx.recyclerview:recyclerview:1.3.2")
     implementation("androidx.recyclerview:recyclerview-selection:1.1.0")
     implementation ("androidx.constraintlayout:constraintlayout:2.1.4")
-    implementation("softsuave-tech-matrix:emoji_sketcher:4.0.1")
+    implementation("com.github.softsuave-tech-matrix:emoji_sketcher:4.0.4")
 
  }
