@@ -7,7 +7,7 @@ import softsuave.tech_matrix.di.ApplicationModule
 import softsuave.tech_matrix.di.DaggerApplicationComponent
 
 
-class MyApplication: Application() {
+internal class MyApplication: Application() {
 
     private lateinit var component: ApplicationComponent
 

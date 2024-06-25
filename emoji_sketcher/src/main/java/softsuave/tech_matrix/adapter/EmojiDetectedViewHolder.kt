@@ -7,7 +7,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import softsuave.tech_matrix.utils.GetEmojiItemClickListener
 
-class EmojiDetectedViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView),
+internal class EmojiDetectedViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView),
     View.OnClickListener {
 
     private val emojiView: TextView = itemView as TextView

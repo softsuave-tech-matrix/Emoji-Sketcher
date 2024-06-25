@@ -11,7 +11,7 @@ import javax.inject.Inject
 import javax.inject.Singleton
 
 @Singleton
-class EmojiDetectionProvider
+internal class EmojiDetectionProvider
 @Inject constructor(
     private val service: EmojiDetectionService,
     @CanvasSize private val width: Int,

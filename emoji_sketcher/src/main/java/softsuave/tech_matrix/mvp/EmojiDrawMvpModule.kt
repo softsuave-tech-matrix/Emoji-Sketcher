@@ -9,7 +9,7 @@ import softsuave.tech_matrix.example.EmojiDrawPresenter
 import softsuave.tech_matrix.utils.FixedEmojiToDrawProvider
 
 @Module
-abstract class EmojiDrawMvpModule {
+internal abstract class EmojiDrawMvpModule {
 
     @Binds
     @ActivityScope

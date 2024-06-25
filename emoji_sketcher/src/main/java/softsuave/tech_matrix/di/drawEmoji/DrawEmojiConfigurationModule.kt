@@ -5,7 +5,7 @@ import dagger.Provides
 import softsuave.tech_matrix.di.ActivityScope
 
 @Module
-object DrawEmojiConfigurationModule {
+internal object DrawEmojiConfigurationModule {
 
     @Provides
     @JvmStatic

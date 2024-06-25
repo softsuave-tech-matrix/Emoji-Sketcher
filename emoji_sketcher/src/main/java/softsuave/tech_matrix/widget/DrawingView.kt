@@ -16,7 +16,7 @@ import io.reactivex.Observable
 import io.reactivex.subjects.PublishSubject
 
 
-class DrawingView @JvmOverloads constructor(
+internal class DrawingView @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0, defStyleRes: Int = 0
 ) : View(context, attrs, defStyleAttr, defStyleRes) 
 {
@@ -73,7 +73,7 @@ class DrawingView @JvmOverloads constructor(
         }
     }
 
-    val strokesObservable: Observable<List<Stroke>>
+    internal val strokesObservable: Observable<List<Stroke>>
         get() = pubsub
 
 

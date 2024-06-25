@@ -21,7 +21,7 @@ interface EmojiDrawContract {
         fun showErrorMessage()
     }
 
-    interface Presenter : MVP.Presenter<View> {
+      interface Presenter : MVP.Presenter<View> {
 
         fun onStrokeAdded(strokes: List<Stroke>)
 

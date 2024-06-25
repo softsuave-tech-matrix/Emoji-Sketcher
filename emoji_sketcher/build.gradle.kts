@@ -70,7 +70,7 @@ publishing {
                 from(components["release"])
                 groupId = "softsuave_tech_matrix"
                 artifactId = "emoji_sketcher"
-                version = "4.1.2"
+                version = "4.1.3"
             }
         }
     }

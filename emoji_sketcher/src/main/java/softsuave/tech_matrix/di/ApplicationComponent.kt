@@ -4,7 +4,7 @@ import softsuave.tech_matrix.di.drawEmoji.DrawEmojiComponent
 import javax.inject.Singleton
 @Singleton
 @Component(modules = [(ApplicationModule::class), (ServiceModule::class)])
-interface ApplicationComponent {
+internal interface ApplicationComponent {
 
     fun plusDrawEmojiComponent(): DrawEmojiComponent
 

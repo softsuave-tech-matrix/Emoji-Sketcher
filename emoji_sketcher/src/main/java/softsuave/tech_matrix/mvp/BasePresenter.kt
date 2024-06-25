@@ -3,7 +3,7 @@ package softsuave.tech_matrix.mvp
 import io.reactivex.disposables.CompositeDisposable
 
 
-  abstract class BasePresenter<V : MVP.View> : MVP.Presenter<V> {
+internal abstract class BasePresenter<V : MVP.View> : MVP.Presenter<V> {
 
     protected var view: V? = null
 

@@ -12,7 +12,7 @@ import timber.log.Timber
 import javax.inject.Inject
 
 @ActivityScope
-open class EmojiDrawPresenter @Inject
+internal open class EmojiDrawPresenter @Inject
 constructor(
     private val detectionProvider: EmojiDetectionProvider,
     private val emojiToDrawProvider: EmojiToDrawProvider,

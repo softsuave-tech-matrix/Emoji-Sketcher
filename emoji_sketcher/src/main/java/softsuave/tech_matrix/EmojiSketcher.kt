@@ -15,11 +15,11 @@ import timber.log.Timber
 import javax.inject.Inject
 
 
-  class EmojiSketcher(private val context: Context,private val getSelectedEmoji : GetSelectedEmoji?=null  ) : Fragment(), EmojiDrawContract.View,
+class EmojiSketcher(private val context: Context,private val getSelectedEmoji : GetSelectedEmoji?=null  ) : Fragment(), EmojiDrawContract.View,
       GetEmojiItemClickListener {
 
     @Inject
-    lateinit var presenter: EmojiDrawContract.Presenter
+     lateinit var presenter: EmojiDrawContract.Presenter
         private lateinit var alertDialog:AlertDialog
     private lateinit var adapter: EmojiDetectedAdapter
     private lateinit var binding: DrawEmojiActivityBinding

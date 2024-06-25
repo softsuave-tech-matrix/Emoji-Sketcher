@@ -12,7 +12,7 @@ import softsuave.tech_matrix.api.EmojiDetectionService
 
 import javax.inject.Singleton
 @Module
-class ServiceModule {
+internal class ServiceModule {
 
     @Provides
     @Singleton

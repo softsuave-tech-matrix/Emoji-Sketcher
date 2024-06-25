@@ -3,7 +3,7 @@ package softsuave.tech_matrix.utils
 import softsuave.tech_matrix.data.EmojiToDraw
 import softsuave.tech_matrix.data.EmojiToDrawProvider
 
-class FixedEmojiToDrawProvider : EmojiToDrawProvider {
+internal class FixedEmojiToDrawProvider : EmojiToDrawProvider {
 
     private val clockEmojis: List<EmojiToDraw> = listOf(
         EmojiToDraw("one o’clock", "🕐"),

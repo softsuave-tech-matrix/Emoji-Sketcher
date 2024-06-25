@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.softsuave.emoji_sketcher.R
 import softsuave.tech_matrix.utils.GetEmojiItemClickListener
 
-class EmojiDetectedAdapter(val context: Context) : RecyclerView.Adapter<EmojiDetectedViewHolder>() {
+internal class EmojiDetectedAdapter(val context: Context) : RecyclerView.Adapter<EmojiDetectedViewHolder>() {
 
     lateinit var emojiToDraw: String
     private var itemClickListener: GetEmojiItemClickListener? = null

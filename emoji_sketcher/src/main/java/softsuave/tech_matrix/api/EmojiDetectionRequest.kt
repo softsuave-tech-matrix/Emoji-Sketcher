@@ -2,7 +2,7 @@ package softsuave.tech_matrix.api
 
 import com.google.gson.annotations.SerializedName
 
-class EmojiDetectionRequest(val options: String, val requests: List<Request>) {
+internal class EmojiDetectionRequest(val options: String, val requests: List<Request>) {
 
     class Request(
         @field:SerializedName("writing_guide")

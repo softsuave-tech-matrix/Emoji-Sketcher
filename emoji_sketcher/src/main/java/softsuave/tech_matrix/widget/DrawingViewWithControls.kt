@@ -11,7 +11,7 @@ import io.reactivex.subjects.PublishSubject
 import softsuave.tech_matrix.model.Stroke
 
 //checkDebugAarMetadata
-class DrawingViewWithControls @JvmOverloads constructor(
+internal class DrawingViewWithControls @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0, defStyleRes: Int = 0
 ) : RelativeLayout(context, attrs, defStyleAttr, defStyleRes) 
 {
@@ -28,7 +28,7 @@ class DrawingViewWithControls @JvmOverloads constructor(
 
     }
 
-    val strokesObservable: Observable<List<Stroke>>?
+      val strokesObservable: Observable<List<Stroke>>?
         get() = binding?.drawingArea?.strokesObservable
 
     val skipObservable: Observable<Any>

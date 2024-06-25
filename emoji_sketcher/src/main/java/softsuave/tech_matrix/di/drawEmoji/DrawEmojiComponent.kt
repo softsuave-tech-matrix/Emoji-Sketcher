@@ -7,7 +7,7 @@ import softsuave.tech_matrix.mvp.EmojiDrawMvpModule
 
 @ActivityScope
 @Subcomponent(modules = [(EmojiDrawMvpModule::class), (DrawEmojiConfigurationModule::class)])
-interface DrawEmojiComponent {
+internal interface DrawEmojiComponent {
 
     fun inject(emojiSketcher: EmojiSketcher)
 }

@@ -7,7 +7,7 @@ import softsuave.tech_matrix.model.Emoji
 import java.io.InputStreamReader
 import java.io.Reader
 import javax.inject.Inject
-class EmojiFileReader @Inject constructor(context: Context) {
+internal class EmojiFileReader @Inject constructor(context: Context) {
 
     private val emojiList = ArrayList<Emoji>()
 
